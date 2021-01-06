@@ -1,0 +1,25 @@
+<table >
+    <tr>
+        <td>Your Name</td>
+        <td><input type="text" name="name" value="{{name}}"  [(ngModel)]="name"/></td>
+    </tr>
+    <tr>
+            <td>Email</td>
+            <td><input type="text" name="email" id="" [(ngModel)]="email" value="{{email}}"/></td>
+        </tr>
+        <tr>
+                <td>Phone Number</td>
+                <td><input type="text" name="phn" id="" [(ngModel)]="phn" value="{{phn}}"/></td>
+            </tr>
+            <tr>
+        <td>Password</td>
+        <td><input type="password" name="pass" id="" [(ngModel)]="pass" value="{{pass}}"/></td>
+    </tr>
+   
+    <tr>
+        <td></td>
+        <td><button class="btn waves-effect waves-light" type="submit" (click)="update()" >Update
+                <i class="material-icons right"></i>
+              </button></td>
+    </tr>            
+</table>

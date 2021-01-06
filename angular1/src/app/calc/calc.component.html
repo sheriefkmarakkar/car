@@ -1,0 +1,21 @@
+<p>CALCULATOR</p>
+<table>
+    <tr>
+        <td>Number 1</td>
+        <td><input type="text" [(ngModel)]="n1"></td>
+    </tr>
+    <tr>
+        <td>Number 2</td>
+        <td><input type="text" [(ngModel)]="n2"></td>
+    </tr>
+    <tr>
+        <td><button class="btn waves-effect waves-light" (click)="a=!a; s=false">Add
+                <i class="material-icons right"></i>
+              </button></td>
+        <td><button class="btn waves-effect waves-light" (click)="s=!s; a=false">Subtract
+                <i class="material-icons right"></i>
+              </button></td>
+    </tr>
+</table>
+<p *ngIf="a">RESULT ={{res}}</p>
+<p *ngIf="s">RESULT ={{res}}</p>

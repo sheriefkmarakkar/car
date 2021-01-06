@@ -1,0 +1,27 @@
+<p>
+    view works!
+</p>
+Name of employee is : {{Name}}
+<hr>
+Age of {{Name}} is {{Age}}
+Email : {{Email}}
+<hr>
+<h2>Address :</h2>
+<h3>{{Address.HouseNo}},{{Address.Street}}</h3>
+<table border="1">
+    <tr *ngFor="let x of Hobbies; let i = index">{{i}}{{x}}</tr>
+</table>
+<br>
+<table border="2">
+    <tr>
+        <td>Name</td>
+        <td>Duration</td>
+        <td>End Date</td>
+    </tr>
+    <tr *ngFor="let p of projects">
+        <td>{{p.name}}</td>
+        <td>{{p.duration}}</td>
+        <td>{{p.enddate}}</td>
+    </tr>
+</table>
+<button type="button" name="btn1" value="add project" (click)="Add()"></button>

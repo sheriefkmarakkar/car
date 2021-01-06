@@ -1,0 +1,26 @@
+<p>SIGN UP</p>
+<table >
+        <tr>
+            <td>Your Name</td>
+            <td><input type="text" name="name" placeholder="Your name" [(ngModel)]="name"/></td>
+        </tr>
+        <tr>
+                <td>Email</td>
+                <td><input type="text" name="email" placeholder="Email" id="" [(ngModel)]="email"/></td>
+            </tr>
+            <tr>
+                    <td>Phone Number</td>
+                    <td><input type="text" name="phn" placeholder="Phone Number" id="" [(ngModel)]="phn"/></td>
+                </tr>
+                <tr>
+            <td>Password</td>
+            <td><input type="password" name="pass" id="" placeholder="Password" [(ngModel)]="pass"/></td>
+        </tr>
+       
+        <tr>
+            <td></td>
+            <td><button class="btn waves-effect waves-light" type="submit" (click)="signup()" >Sign Up
+                    <i class="material-icons right"></i>
+                  </button></td>
+        </tr>            
+    </table>

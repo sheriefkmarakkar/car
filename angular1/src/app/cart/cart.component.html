@@ -1,0 +1,46 @@
+<hr>
+<p>CART</p>
+<hr>
+PRODUCTS 
+<table border="2">
+    <tr>
+        <td>#</td>
+        <td>Name</td>
+        <td>Price</td>
+        <td>Company</td>
+    </tr>
+    <tr *ngFor="let p of products; let i = index">
+        
+        <td>{{i+1}}</td>
+        <td>{{p.name}}</td>
+        <td>{{p.price}}</td>
+        <td>{{p.company}}</td>
+        <td><button (click)="AddToCart(i);">Add To Cart</button></td>
+    </tr>
+</table>
+<table >
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><button (click)= "viewCart()">View Cart</button></td>
+    </tr>
+</table>
+
+CART:
+<table border="2" *ngIf="view">
+    <tr>
+        
+        <td>Name</td>
+        <td>Price</td>
+        <td>Company</td>
+    </tr>
+    <tr *ngFor="let c of cart; let i = index">
+        <td>{{c.name}}</td>
+        <td>{{c.price}}</td>
+        <td>{{c.company}}</td>
+        <td><button (click)="RemoveFromCart(i)">Remove</button></td>
+
+    </tr>
+</table>
+

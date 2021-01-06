@@ -1,0 +1,21 @@
+
+
+<table class="centered" style="width: 30%">
+    <tr>
+        <td>Username</td>
+        <td><input type="text" name="uname" id="" placeholder="Username" [(ngModel)]="uname"></td>
+    </tr>
+    <tr>
+        <td>Password</td>
+        <td><input type="password" name="pass" id="" placeholder="Password"[(ngModel)]="pass"></td>
+    </tr>
+    <tr>
+        <td></td><td><input type="button" name="login" value="Login" (click)="login()"/></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><td><input type="button" name="s" value="Signup" (click)="signup()"/></td>
+    </tr>     
+</table>
+
+<app-signup *ngIf="sign"></app-signup>
